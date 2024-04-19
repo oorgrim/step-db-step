@@ -1,0 +1,57 @@
+.ul_menu {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 40px; 
+    text-decoration: none; 
+}
+
+.burgerMenu {
+    position: relative;
+}
+
+.burgerIcon, .quitIcon {
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    background-color: lightpink;
+    /* animation: menuAnim 0.3s forwards;  */
+    animation: menuAnimBack 0.3s forwards; 
+}
+
+.menu.active {
+    animation: menuAnim 0.3s forwards; 
+}
+
+ul {
+    padding-top: 20px;
+}
+
+@keyframes menuAnim {
+    from {
+        left: -250px; 
+    }
+    to {
+        left: 0; 
+    }
+}
+
+.quitIcon {
+    float: right;   
+}
+
+@keyframes menuAnimBack {
+    from {
+        left: 0; 
+    }
+    to {
+        left: -250px; 
+    }
+}
