@@ -3,6 +3,15 @@
     padding: 0; 
     margin-top: 40px; 
     text-decoration: none; 
+    font-size: 30px;
+    color: aliceblue;
+}
+li {
+    margin-top: 10px;
+}
+
+a {
+    color: rgb(63, 63, 63)
 }
 
 .burgerMenu {
@@ -11,6 +20,7 @@
 
 .burgerIcon, .quitIcon {
     cursor: pointer;
+    font-size: 40px;
 }
 
 .menu {

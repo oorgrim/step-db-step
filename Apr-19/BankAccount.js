@@ -1,27 +1,26 @@
 class BankAccount {
     constructor(owner, balance=0) {
         this.owner = owner
-        this.balance = balance    
+        this.balance = balance
     }
     deposit(amount) {
         if (amount >= 0) {
             this.balance += amount
         }
         else {
-            console.log('Вы ушли в минус');
+            console.log('Вы ушли в минус')
         }
     }
-    witdraw(amount) {
+    withdraw(amount) {
         if (amount <= this.balance) {
             this.balance -= amount
         }
         else {
-            console.log('нет ');
+            console.log('Недостаточно средств на счете')
         }
-
     }
-    }
+}
 
-    let a = new BankAccount('ayo')
-    a.deposit(100)
-    a.witdraw(100)
+let a = new BankAccount(':)')
+a.deposit(200)
+a.withdraw(200)
